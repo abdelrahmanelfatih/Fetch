@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class = "container">
+        <h1>📬 Post Office</h1>
+
+        <div class = "input-control"> 
+            <input type="number" id = "postId" placeholder="Enter Post ID (1-100)" />
+            <span class = "error-msg" id= "inputError"></span>
+        </div>
+
+        <button id="getPostBtn"> Get Post </button>
+
+        <p id = "loadingText" class= "hidden">Loading...</p>
+
+        <div id = "postCard" class="card hidden">
+            <h2 id="postTitle"></h2>
+            <p id="postBody"></p>
+        </div>
+
+        <p id = "fetchError" class="error-msg hidden"></p>
+    </div>
+
+    <script src ="script.js" defer></script>
+</body>
+</html>
